@@ -17,11 +17,11 @@ An Express.js application for managing census participants, with data persisted 
 
 ## Environment Variables
 Create a .env file in the project root with the following keys
-DB_USERNAME= <your-db-username>
-DB_PASSWORD= <your-db-password>
-DATABASE_NAME= <your-database-name>
-DB_HOST= <your-db-host>
-DB_PORT= <your-db-port>
+DB_USERNAME= avnadmin
+DB_PASSWORD= UaTbY40PdaV_nGaz-JU
+DATABASE_NAME= censusdb
+DB_HOST= mysql-1fc83aaf-anasthedeveloper7-d722.h.aivencloud.com
+DB_PORT= 24783
 DIALECT=mysql
 PORT= 3000
 
