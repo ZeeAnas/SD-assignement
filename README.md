@@ -84,4 +84,4 @@ Request and Response
    - Set build command: npm install
    - Set start command: node app.js
    - Add environement varibales (from your .env file)
-3. Deploy and note the live URL: hhtps://<your-app>.onrender.com
+3. Deploy and note the live URL: https://sd-assignement.onrender.com

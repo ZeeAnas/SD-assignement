@@ -86,7 +86,7 @@ router.post('/add', validateParticipant, async (req, res) => {
             result: 'Participant created successfully'
         });
     } catch (error) {
-        console.error('Error creating participant:', error);   // Logs full error
+        console.error('Error creating participant:', error);   
         return res.status(500).jsend.error({
             message: `Error creating participant: ${error.name} – ${error.message}`
         });
@@ -104,8 +104,7 @@ router.get('/', async (req, res) => {
         });
         return res.jsend.success({ statusCode: 200, result: participants });
     } catch (error) {
-        console.error(error);   // still log full stack to your server console
-        // expose the message to Postman so we know what to fix:
+        console.error(error);  
         return res.status(500).jsend.error({
             message: `Failed to retrieve participants: ${error.message}`
         });
