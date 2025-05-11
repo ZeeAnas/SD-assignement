@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
                 
             }
         },
-        firstName: {
+        firstname: {
             type: DataTypes.STRING(100),
             allowNull: false,
             validate: {
@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
                 }
             }
         },
-        lasName: {
+        lastname: {
             type: DataTypes.STRING(100),
             allowNnull: false,
             validate: {
@@ -54,11 +54,15 @@ module.exports = (sequelize, DataTypes) => {
     Participant.associate = (db) => {
         db.Participant.hasOne(db.WorkDetail, {
           foreignKey: 'participant_email',
-          as: 'workDetails'
+          as: 'workDetails',
+          onDelete: 'CASCADE',
+          hooks: true
         });
         db.Participant.hasOne(db.HomeDetail, {
           foreignKey: 'participant_email',
-          as: 'homeDetails'
+          as: 'homeDetails',
+          onDelete: 'CASCADE',
+          hooks:   true
         });
       };
     

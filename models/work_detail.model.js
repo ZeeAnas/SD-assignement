@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
             companyname : {
                 type: DataTypes.STRING(255),
                 allowNull: false,
-                validate: { leng: { args: [1, 255], msg: 'Company name must not be empty'} }
+                validate: { len: { args: [1, 255], msg: 'Company name must not be empty'} }
             },
             salary: {
                 type: DataTypes.DECIMAL(15,2),
